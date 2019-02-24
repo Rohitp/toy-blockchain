@@ -40,7 +40,7 @@ class Blockchain(object):
         return block
 
     @property
-    def latestBlock(slef):
+    def latestBlock(self):
         return self.chain[-1]
 
   
