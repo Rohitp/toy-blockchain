@@ -4,6 +4,7 @@ import sys
 from utils import doWork, hash
 
 # TODO: Add a unique node identifier
+# TODO: Add a block reward, consensus algorithm and persistence
 
 app = Flask(__name__)
 
