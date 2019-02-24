@@ -20,6 +20,6 @@ def doWork(prevProof):
     return proof
 
 def verifyWork(prevProof, proof):
-    return hashlib.sha256(str((prevProof * proof)).encode('utf-8')).hexdigest()[:5] == '00000'
+    return hashlib.sha256(str(prevProof).encode('utf-8') + str(proof).encode('utf-8')).hexdigest()[:5] == '00000'
 
 
